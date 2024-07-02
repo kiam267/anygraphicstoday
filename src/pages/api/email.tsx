@@ -17,11 +17,8 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method === 'POST') {
-    const {
-      userFirstname,
-      phoneNumber,
-      userMessage,
-    } = req.body;
+    const { userFirstname, phoneNumber, userMessage } =
+      req.body;
 
     const emailHtml = renderToStaticMarkup(
       <KoalaWelcomeEmail

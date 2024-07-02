@@ -23,6 +23,7 @@ const VideoModal = () => {
     <div className={'vid-m' + (vid ? ' vid-a' : ' ')}>
       <div className="vid-c">
         <button
+          type="button"
           aria-label="close video popup"
           className="close-v"
           onClick={() => setVid(false)}
@@ -30,30 +31,11 @@ const VideoModal = () => {
           <i className="fa-light fa-xmark-large"></i>
         </button>
         <video autoPlay controls ref={videoRef}>
-          <source src="/images/popup-video.mp4" type="video/mp4" />
-        </video>
-
-        {/* <a
-          href="tel:+18884423442"
-          className="d-flex align-items-center "
-          style={{
-            width: '140px',
-            height: '50px',
-          }}
-        >
-          <Image
-            src={phoneIcon}
-            alt="Phone Icon"
-            style={{
-              width: '20px',
-              height: '20px',
-              objectFit: 'cover',
-              cursor: 'pointer',
-            }}
+          <source
+            src="/images/popup-video.mp4"
+            type="video/mp4"
           />
-
-           <p className="call-animation">Call Now</p>
-        </a> */}
+        </video>
       </div>
     </div>
   );

@@ -10,7 +10,8 @@ const CtaTwo = () => {
             <div
               className="cta-two-wrapper bg-img layer rounded-5"
               style={{
-                backgroundImage: "url('/images/footer_up_.jpg')",
+                backgroundImage:
+                  "url('/images/footer_up_.jpg')",
                 height: '400px',
               }}
             ></div>
@@ -19,15 +20,22 @@ const CtaTwo = () => {
                 <div className="col-12 col-lg-8">
                   <div className="cta-two__content">
                     <span>Hello !</span>
-                    <h2 className="title-anim">ready to work with us?</h2>
+                    <h2 className="title-anim">
+                      ready to work with us?
+                    </h2>
                     <h5>
-                      <Link href="tel:+18884423442">call:+1-888-442-3442</Link>
+                      <Link href="tel:+16286005017">
+                        call: +1-628-600-5017{' '}
+                      </Link>
                     </h5>
                   </div>
                 </div>
                 <div className="col-12 col-lg-3 ">
                   <div className="text-start text-lg-end">
-                    <Link href="/contact-us" className="btn btn--tertiary">
+                    <Link
+                      href="/contact-us"
+                      className="btn btn--tertiary"
+                    >
                       start a project
                       <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                     </Link>

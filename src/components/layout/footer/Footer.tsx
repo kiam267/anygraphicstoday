@@ -66,11 +66,11 @@ const Footer = () => {
                   </div>
 
                   <Link
-                    href="tel:+18884423442"
+                    href="tel:+16286005017"
                     className="col-6"
                   >
                     <i className="fa-sharp fa-solid fa-phone-volume"></i>
-                    +1-888-442-3442
+                     +1-628-600-5017
                   </Link>
                   <Link href="mailto:info@anygraphicstoday.com">
                     <i className="fa-sharp fa-solid fa-envelope"></i>

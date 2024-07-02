@@ -1,6 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import star from "public/images/testimonial/star.png";
+import React from 'react';
+import Image from 'next/image';
+import star from 'public/images/testimonial/star.png';
 
 const HomeTwoCta = () => {
   return (
@@ -16,7 +16,8 @@ const HomeTwoCta = () => {
                 <div className="col-12 col-md-10 col-lg-9 col-xl-8 col-xxl-9">
                   <div className="section__header text-center">
                     <h2 className="title">
-                      Stay Ahead With Our Top Notch Digital Services
+                      Stay Ahead With Our Top Notch Digital
+                      Services
                     </h2>
                   </div>
                   <div className="footer__single-form">
@@ -29,7 +30,11 @@ const HomeTwoCta = () => {
                           placeholder="Enter Your Email"
                           required
                         />
-                        <button type="submit" className="subscribe">
+                        <button
+                          type="submit"
+                          className="subscribe"
+                          aria-label="subscribe"
+                        >
                           <i className="fa-sharp fa-solid fa-paper-plane"></i>
                         </button>
                       </div>
@@ -37,8 +42,16 @@ const HomeTwoCta = () => {
                   </div>
                 </div>
               </div>
-              <Image src={star} alt="Image" className="star" />
-              <Image src={star} alt="Image" className="star-two" />
+              <Image
+                src={star}
+                alt="Image"
+                className="star"
+              />
+              <Image
+                src={star}
+                alt="Image"
+                className="star-two"
+              />
             </div>
           </div>
         </div>

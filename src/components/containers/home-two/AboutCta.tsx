@@ -25,22 +25,6 @@ const AboutCta = () => {
                      Contact Now
                     </Link>
                   </div>
-                  {/* <div className="footer__single-form">
-                    <form action="#" method="post">
-                      <div className="input-email">
-                        <input
-                          type="email"
-                          name="subscribe-news"
-                          id="subscribeNews"
-                          placeholder="Enter Your Email"
-                          required
-                        />
-                        <button type="submit" className="subscribe">
-                          <i className="fa-sharp fa-solid fa-paper-plane"></i>
-                        </button>
-                      </div>
-                    </form>
-                  </div> */}
                 </div>
               </div>
               <Image src={star} alt="Image" className="star" />
