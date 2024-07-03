@@ -1,10 +1,8 @@
-"use client"
+'use client';
 
 import Image from 'next/image';
 
-
 function Icon() {
-
   return (
     <>
       <div
@@ -29,7 +27,7 @@ function Icon() {
         }}
       >
         <a
-          href="tel:+18884423442"
+          href="tel:+16286005017"
           target="_blank"
           className="py-3"
         >
