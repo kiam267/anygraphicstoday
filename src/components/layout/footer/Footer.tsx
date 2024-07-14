@@ -152,6 +152,7 @@ const Footer = () => {
                         }
                       />
                       <button
+                        aria-label="subscribe-button"
                         type="submit"
                         className="subscribe"
                       >

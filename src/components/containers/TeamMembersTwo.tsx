@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -18,7 +18,10 @@ import ten from 'public/images/teams/ten.jpg';
 const TeamMembersTwo = ({
   serviceName = [one, two, three, four, five, six, seven],
   show = true,
-}: any) => {
+}: {
+  serviceName: StaticImageData[];
+  show?: boolean;
+}) => {
   const [thunkImage, setThunkImage] = useState([one]);
 
   return (
@@ -30,7 +33,9 @@ const TeamMembersTwo = ({
               <div className="row gaper align-items-center">
                 <div className="col-12 col-lg-8">
                   <div className="section__header text-center text-lg-start mb-0">
-                    <h2 className="title title-anim">Our Expert Coverage</h2>
+                    <h2 className="title title-anim">
+                      Our Expert Coverage
+                    </h2>
                   </div>
                 </div>
                 <div className="col-12 col-lg-4">
@@ -80,33 +85,41 @@ const TeamMembersTwo = ({
               },
             }}
           >
-            {serviceName.map((image: any, index: number) => (
-              <SwiperSlide key={index}>
-                <div className="team-s__slider-single ">
-                  <div className="team-wrap">
-                    <Image
-                      className="rounded-4"
-                      placeholder="blur"
-                      src={image}
-                      alt="Image"
-                      height={600}
-                      // width={800}
-                      style={{
-                        objectFit: 'cover',
-                        height: '400px',
-                      }}
-                    />
+            {serviceName.map(
+              (image: any, index: number) => (
+                <SwiperSlide key={index}>
+                  <div className="team-s__slider-single ">
+                    <div className="team-wrap">
+                      <Image
+                        className="rounded-4"
+                        placeholder="blur"
+                        src={image}
+                        alt="Image"
+                        height={600}
+                        // width={800}
+                        style={{
+                          objectFit: 'cover',
+                          height: '400px',
+                        }}
+                      />
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              )
+            )}
           </Swiper>
         </div>
         <div className="slide-group pt-5">
-          <button aria-label="previous item" className="slide-btn prev-team-s">
+          <button
+            aria-label="previous item"
+            className="slide-btn prev-team-s"
+          >
             <i className="fa-light fa-angle-left"></i>
           </button>
-          <button aria-label="next item" className="slide-btn next-team-s">
+          <button
+            aria-label="next item"
+            className="slide-btn next-team-s"
+          >
             <i className="fa-light fa-angle-right"></i>
           </button>
         </div>

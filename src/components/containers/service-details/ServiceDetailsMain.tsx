@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 import TeamMembersTwo from '../TeamMembersTwo';
 
-interface SERVICEDETAILMAIN {
+interface ServiceDetailsMain {
   blogData: any;
   path: any;
   miniPath: any;
@@ -18,8 +18,7 @@ const ServiceDetailsMain = ({
   path,
   miniPath,
   serviceName,
-}: SERVICEDETAILMAIN) => {
-  
+}: ServiceDetailsMain) => {
   return (
     <section className="mb-5 service-details fade-wrapper">
       <div className="container">
@@ -27,24 +26,33 @@ const ServiceDetailsMain = ({
           <div className="col-12 col-xl-10">
             <div className="service-details__slider">
               <div className="service-details__slider-single">
-               
                 {blogData.map(
-                  (blog: any, index: React.Key | null | undefined) => {
+                  (
+                    blog: any,
+                    index: React.Key | null | undefined
+                  ) => {
                     return (
                       <>
                         {index === 0 && (
-                          // poster fade-top 
+                          // poster fade-top
                           <div className="poster">
                             <Image src={path} alt="Image" />
                           </div>
                         )}
-                        {!blog.areaHalfWidth && !blog.workStep ? (
+                        {!blog.areaHalfWidth &&
+                        !blog.workStep ? (
                           <div
                             className="details-group section__cta text-start"
                             key={index}
                           >
-                            <h3 className="title-anim">{blog.title}</h3>
-                            <p dangerouslySetInnerHTML={{ __html: blog.des }} />
+                            <h3 className="title-anim">
+                              {blog.title}
+                            </h3>
+                            <p
+                              dangerouslySetInnerHTML={{
+                                __html: blog.des,
+                              }}
+                            />
                           </div>
                         ) : null}
                       </>
@@ -52,7 +60,10 @@ const ServiceDetailsMain = ({
                   }
                 )}
                 <div className="footer__cta text-start pt-4">
-                  <Link href="/contact-us" className="btn btn--secondary">
+                  <Link
+                    href="/contact-us"
+                    className="btn btn--secondary"
+                  >
                     book a designer now
                   </Link>
                 </div>
@@ -62,7 +73,10 @@ const ServiceDetailsMain = ({
         </div>
       </div>
 
-      <TeamMembersTwo serviceName={serviceName} show={false} />
+      <TeamMembersTwo
+        serviceName={serviceName}
+        show={false}
+      />
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10">
@@ -72,13 +86,18 @@ const ServiceDetailsMain = ({
                   (blog: any, index: number) =>
                     blog.areaHalfWidth &&
                     !blog.workStep && (
-                      <div className="section__content-cta" key={index}>
+                      <div
+                        className="section__content-cta"
+                        key={index}
+                      >
                         <div className="row gaper align-items-center gap-y-3">
                           {index % 2 === 0 ? (
                             <div className="col-12 col-lg-5 my-2 my-md-5 py-4">
                               <div className="poster-small">
                                 <Image
-                                  src={blog.image || miniPath}
+                                  src={
+                                    blog.image || miniPath
+                                  }
                                   alt="Image"
                                 />
                               </div>
@@ -86,7 +105,9 @@ const ServiceDetailsMain = ({
                           ) : (
                             <div className="col-12 col-lg-7  my-2 my-md-5">
                               <div className="details-group">
-                                <h3 className="title-anim">{blog.title}</h3>
+                                <h3 className="title-anim">
+                                  {blog.title}
+                                </h3>
                                 <p
                                   dangerouslySetInnerHTML={{
                                     __html: blog.des,
@@ -99,7 +120,9 @@ const ServiceDetailsMain = ({
                           {index % 2 === 0 ? (
                             <div className="col-12 col-lg-7  my-2 my-md-5">
                               <div className="details-group">
-                                <h3 className="title-anim">{blog.title}</h3>
+                                <h3 className="title-anim">
+                                  {blog.title}
+                                </h3>
                                 <p
                                   dangerouslySetInnerHTML={{
                                     __html: blog.des,
@@ -111,7 +134,9 @@ const ServiceDetailsMain = ({
                             <div className="col-12 col-lg-5  my-2 my-md-5">
                               <div className="poster-small">
                                 <Image
-                                  src={blog.image || miniPath}
+                                  src={
+                                    blog.image || miniPath
+                                  }
                                   alt="Image"
                                 />
                               </div>
@@ -122,7 +147,10 @@ const ServiceDetailsMain = ({
                     )
                 )}
                 <div className="footer__cta text-start py-5">
-                  <Link href="/contact-us" className="btn btn--secondary">
+                  <Link
+                    href="/contact-us"
+                    className="btn btn--secondary"
+                  >
                     call a designer now
                   </Link>
                 </div>

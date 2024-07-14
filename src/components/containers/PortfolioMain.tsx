@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -34,15 +34,21 @@ import secondThirteen from 'public/images/teams/secondThirteen.jpg';
 import secondFourteen from 'public/images/teams/secondFourteen.jpg';
 import secondFifteen from 'public/images/teams/secondFifteen.jpg';
 
-
-
 SwiperCore.use([Navigation]);
 
 const PortfolioMain = () => {
-
-
-  const ImagePath = [one, two, three, four, five, six, seven, eight, nine ];
-  const SecondImagePath = [
+  const ImagePath: StaticImageData[] = [
+    one,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven,
+    eight,
+    nine,
+  ];
+  const SecondImagePath: StaticImageData[] = [
     SecondOne,
     SecondTwo,
     secondThree,
@@ -59,7 +65,6 @@ const PortfolioMain = () => {
     secondFourteen,
     secondFifteen,
   ];
-
 
   return (
     <section className="section portfolio-m fade-wrapper">
@@ -116,7 +121,7 @@ const PortfolioMain = () => {
               ))}
             </Swiper>
           </div>
-          
+
           <div className="slide-group pt-5">
             <button
               aria-label="previous item"
@@ -124,7 +129,10 @@ const PortfolioMain = () => {
             >
               <i className="fa-light fa-angle-left"></i>
             </button>
-            <button aria-label="next item" className="slide-btn next-team-s">
+            <button
+              aria-label="next item"
+              className="slide-btn next-team-s"
+            >
               <i className="fa-light fa-angle-right"></i>
             </button>
           </div>
@@ -169,14 +177,14 @@ const PortfolioMain = () => {
                     <div className="team-wrap">
                       <Image
                         className="rounded-4"
-                        placeholder='blur'
+                        placeholder="blur"
                         src={path}
                         alt="Image"
                         height={600}
                         width={800}
                         style={{
                           objectFit: 'cover',
-                          height: '600px'
+                          height: '600px',
                         }}
                       />
                     </div>
@@ -192,7 +200,10 @@ const PortfolioMain = () => {
             >
               <i className="fa-light fa-angle-left"></i>
             </button>
-            <button aria-label="next item" className="slide-btn next-team-s">
+            <button
+              aria-label="next item"
+              className="slide-btn next-team-s"
+            >
               <i className="fa-light fa-angle-right"></i>
             </button>
           </div>

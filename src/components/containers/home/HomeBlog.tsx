@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import one from 'public/images/blog/image_1.png';
-import two from 'public/images/blog/image_2.png';
+
 import { blogContent } from '@/constant/inedex';
 import { useRouter } from 'next/router';
+
+
+
 const HomeBlog = () => {
   const router = useRouter();
   return (
@@ -63,30 +65,6 @@ const HomeBlog = () => {
                 </div>
               )
           )}
-
-          {/* <div className="col-12 col-md-6">
-            <div className="blog__single fade-top">
-              <div className="blog__single-thumb topy-tilt">
-                <Link href="blog-single">
-                  <Image src={two} alt="Image" />
-                </Link>
-              </div>
-              <div className="blog__single-content">
-                <h4>
-                  <Link href="blog-single">
-                    Transforming Challenges into Opportunities
-                  </Link>
-                </h4>
-                <div className="blog__single-meta">
-                  <Link href="blog" className="sub-title">
-                    creative
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </Link>
-                  <p>MARCH 23, 2023</p>
-                </div>
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

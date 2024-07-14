@@ -21,6 +21,7 @@ const BlogSingle = () => {
           );
         }
       })}
+     
     </Layout>
   );
 };

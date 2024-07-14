@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -16,7 +16,7 @@ import nine from 'public/images/teams/nine.jpg';
 import ten from 'public/images/teams/ten.jpg';
 
 const TeamMembers = () => {
-  const imageChunk = [
+  const imageChunk: StaticImageData[] = [
     one,
     two,
     three,
