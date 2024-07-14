@@ -1,13 +1,19 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Layout from '@/components/layout/Layout';
-import HomeOneBanner from '@/components/layout/banner/HomeOneBanner';
-import Agency from '@/components/containers/home/Agency';
+
+const HomeOneBanner = dynamic(
+  () => import('@/components/layout/banner/HomeOneBanner'),
+  { ssr: false }
+);
+
+const Agency = dynamic(
+  () => import('@/components/containers/home/Agency'),
+  { ssr: false }
+);
 import PortfolioText from '@/components/containers/home/PortfolioText';
 import HomeOffer from '@/components/containers/home/HomeOffer';
-import HomeTestimonial from '@/components/containers/home/HomeTestimonial';
 import HomeBlog from '@/components/containers/home/HomeBlog';
-import HomeSponsor from '@/components/containers/home/HomeSponsor';
-import NextPage from '@/components/containers/home/NextPage';
 import CtaTwo from '@/components/containers/service-details/CtaTwo';
 import Head from 'next/head';
 
