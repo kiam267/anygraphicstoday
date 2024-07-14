@@ -232,13 +232,13 @@ const ContactMain = () => {
               <div className="content">
                 <h4>Phone</h4>
                 <p>
-                  <Link href="tel:+16286005017">
+                  <Link
+                    aria-label="telephone"
+                    href="tel:+16286005017"
+                  >
                      +1-628-600-5017
                   </Link>
                 </p>
-                {/* <p>
-                  <Link href="tel:197-90-56-780">Fax : +18882073469</Link>
-                </p> */}
               </div>
             </div>
           </div>
@@ -250,15 +250,13 @@ const ContactMain = () => {
               <div className="content">
                 <h4>Mail Address</h4>
                 <p>
-                  <Link href="mailto:info@anygraphicstoday.com">
+                  <Link
+                    aria-label="anygrahictoday-email"
+                    href="mailto:info@anygraphicstoday.com"
+                  >
                     info@anygraphicstoday.com
                   </Link>
                 </p>
-                {/* <p>
-                  <Link href="mailto:info.company@gmail.com">
-                    Info.company@yahoo.com
-                  </Link>
-                </p> */}
               </div>
             </div>
           </div>

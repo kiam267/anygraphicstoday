@@ -191,21 +191,22 @@ const Footer = () => {
                 <div className="col-12 col-lg-4">
                   <div className="social justify-content-center justify-content-lg-end">
                     <Link
+                      aria-label="facebook"
                       href="https://www.facebook.com/AnyGraphicsToday"
                       target="_blank"
                     >
                       <i className="fa-brands fa-facebook-f"></i>
                     </Link>
                     <Link
+                      aria-label="twitter"
                       href="https://twitter.com/anygraphics2day"
                       target="_blank"
                     >
                       <i className="fa-brands fa-twitter"></i>
                     </Link>
-                    {/* <Link href="https://www.pinterest.com/" target="_blank">
-                      <i className="fa-brands fa-linkedin-in"></i>
-                    </Link> */}
+
                     <Link
+                      aria-label="instagram"
                       href="https://www.instagram.com/anygraphicstoday"
                       target="_blank"
                     >

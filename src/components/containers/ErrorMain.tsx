@@ -16,7 +16,11 @@ const ErrorMain = () => {
               </div>
               <h2>page not found</h2>
               <div className="section__content-cta">
-                <Link href="/" className="btn btn--secondary">
+                <Link
+               
+                  href="/"
+                  className="btn btn--secondary"
+                >
                   back to home
                 </Link>
               </div>

@@ -13,6 +13,7 @@ function Icon() {
       >
         <div>
           <a
+            aria-label="whatsapp"
             href="https://api.whatsapp.com/send/?phone=%2B19792507486&text&type=phone_number&app_absent=0 "
             target="_blank"
           >

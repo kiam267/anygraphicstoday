@@ -30,7 +30,7 @@ const BlogPage = () => {
                 </div>
 
                 <div className="blog__single-content pt-3">
-                  <h5>{blog.header}</h5>
+                  <h2 className='fs-4'>{blog.header}</h2>
                   <div className="blog__single-meta">
                     <Link href="#" className="sub-title">
                       {blog.date}
