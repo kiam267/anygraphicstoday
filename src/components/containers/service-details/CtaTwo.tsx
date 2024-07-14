@@ -23,11 +23,11 @@ const CtaTwo = () => {
                     <h2 className="title-anim">
                       ready to work with us?
                     </h2>
-                    <h5>
+                    <h1 className="fs-5">
                       <Link href="tel:+16286005017">
                         call: +1-628-600-5017{' '}
                       </Link>
-                    </h5>
+                    </h1>
                   </div>
                 </div>
                 <div className="col-12 col-lg-3 ">

@@ -330,12 +330,6 @@ const Layout = ({
             )}
           {children}
         </main>
-
-        {/* {footer === 1 && <Footer />}
-        {footer === 2 && <Footer />}
-        {footer === 3 && <Footer />}
-        {footer === 4 && <Footer />}
-        {footer === 5 && <Footer />} */}
         <Footer />
         {video ? <VideoModal /> : null}
         <ScrollProgressBtn />

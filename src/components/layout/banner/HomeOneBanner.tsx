@@ -17,7 +17,8 @@ const HomeOneBanner = () => {
       const device_width = window.innerWidth;
 
       if (
-        document.querySelectorAll('.g-ban-one').length > 0 &&
+        document.querySelectorAll('.g-ban-one').length >
+          0 &&
         device_width > 576
       ) {
         const tl = gsap.timeline({
@@ -131,10 +132,9 @@ const HomeOneBanner = () => {
                       <div className="navbar__mobile-options d-sm-flex">
                         <Link
                           href="tel:+16286005017"
-                          className="btn btn--secondary"
+                          className="btn btn--secondary text-black"
                         >
                           Call:  +1-628-600-5017
-                          {/* <i className="fa-sharp fa-solid fa-arrow-up-right ps-2"></i> */}
                         </Link>
                       </div>
                     </div>
