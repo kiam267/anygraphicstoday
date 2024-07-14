@@ -17,7 +17,7 @@ import HomeBlog from '@/components/containers/home/HomeBlog';
 import CtaTwo from '@/components/containers/service-details/CtaTwo';
 import Head from 'next/head';
 
-const HomeDark = () => {
+const  HomeDark = () => {
   return (
     <Layout header={1} footer={1} video={true}>
       <Head>
