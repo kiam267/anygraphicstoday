@@ -11,7 +11,7 @@ yarn dev
 # or
 pnpm dev
 ```
-ssh root@86.38.204.106
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
